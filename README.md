@@ -1,71 +1,59 @@
 Base de données bdd_devoir3
 
 
-Description : 
-
-Ce dépôt contient le script SQL de création et d'initialisation de la base de données bdd_devoir3. Cette base de données est conçue pour gérer un système de cours, devoirs, élèves, formations, professeurs et rendez-vous associés.
-
-Le script inclut la structure des tables, les contraintes d’intégrité référentielle (clés étrangères), ainsi que des données d'exemple pour chaque table.
 
 
 
-Contenu : 
+# Base de données pédagogique - bdd_devoir3
 
-Création de la base bdd_devoir3
+---
+
+## Description
+
+Dump SQL d'une base de données MySQL destinée à gérer un système pédagogique complet, incluant :
+
+- Cours
+- Devoirs
+- Élèves
+- Formations
+- Matières
+- Professeurs
+- Rendez-vous
+
+Le fichier comprend la structure des tables, des données d'exemple et des contraintes pour garantir l'intégrité référentielle.
+
+---
+
+## Contenu
+
+- Tables principales :  
+  - `cours`  
+  - `devoirs`  
+  - `eleves`  
+  - `formations`  
+  - `matieres`  
+  - `professeurs`  
+  - `rdv` (rendez-vous)  
+- Clés primaires, clés étrangères et index  
+- Données d’exemple pour faciliter les tests  
+
+---
+
+## Installation
+
+Pour importer cette base dans MySQL :
 
 
+mysql -u utilisateur -p < fichier_dump.sql
 
+ou via phpMyAdmin en important le fichier directement.
 
-Tables principales :
-
-
-cours : liste des cours avec descriptions et association à une matière
-
-devoirs : devoirs liés aux cours
-
-eleves : informations sur les élèves
-
-eleves_formations : lien entre élèves et formations avec dates
-
-formations : liste des formations disponibles
-
-formations_matieres : association formations - matières
-
-matieres : matières enseignées
-
-professeurs : liste des professeurs
-
-professeurs_matieres : association professeurs - matières
-
-rdv : rendez-vous entre élèves, professeurs et matières
-
-
-
-
-
-Index et clés primaires/étrangères pour assurer l'intégrité des données : 
-
-
-Données d'exemple pour chaque table : 
 
 Prérequis : 
 
 Serveur MySQL ou MariaDB (version 5.7.11 utilisée pour ce script)
 
 phpMyAdmin ou autre outil de gestion de base de données compatible SQL
-
-
-
-
-Installation : 
-
-Importer le fichier SQL dans votre serveur de base de données :
-
-mysql -u utilisateur -p < bdd_devoir3.sql
-
-
-ou via phpMyAdmin en important le fichier directement.
-
 
 
 
@@ -92,6 +80,8 @@ matieres	Matières enseignées
 professeurs	Liste des professeurs
 professeurs_matieres	Association professeurs-matières
 rdv	Rendez-vous entre élèves, professeurs et matières
+
+
 
 
 Auteur
