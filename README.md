@@ -1,3 +1,5 @@
+🇬🇧 Version anglaise disponible : [README_EN.md](README_EN.md)
+
 # Base de données pédagogique
 
 ---
