@@ -76,10 +76,10 @@ Ce schéma de base de données peut servir pour des projets éducatifs, de gesti
 
 ## Auteur
 
-Vanessa PAGANOTTO (exemple)
+Vanessa PAGANOTTO
 
 ---
 
 ## Licence
 
-Ce projet est sous licence MIT — voir le fichier LICENSE pour plus de détails.
+Ce projet est sous licence MIT.
