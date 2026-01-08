@@ -1,10 +1,4 @@
-Base de données bdd_devoir3
-
-
-
-
-
-# Base de données pédagogique - bdd_devoir3
+# Base de données pédagogique
 
 ---
 
